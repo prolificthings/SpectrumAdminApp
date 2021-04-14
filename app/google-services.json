@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "777495318363",
+    "project_id": "spectrum-admin-dummy",
+    "storage_bucket": "spectrum-admin-dummy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777495318363:android:bd1f18a23ae939df54547e",
+        "android_client_info": {
+          "package_name": "com.example.spectrumadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777495318363-d58t6klfruc6llikb1v107bgofa29tm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC-O8elMG6mqbZaCsz0BmXwjXbfFmKhec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777495318363-d58t6klfruc6llikb1v107bgofa29tm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

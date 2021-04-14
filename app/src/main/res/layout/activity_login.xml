@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/email_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/Email"
+        app:layout_constraintEnd_toEndOf="@id/Email"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@id/Email"
+        app:layout_constraintTop_toTopOf="@id/Email"
+        app:layout_constraintVertical_bias="0.684"
+        app:srcCompat="@drawable/mail_line" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="199dp"
+        android:layout_height="151dp"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spectrumlogo" />
+
+    <TextView
+        android:id="@+id/SignIn"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/andada"
+        android:gravity="center"
+        android:text="Sign in"
+        android:textColor="#131213"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/rect"
+        android:layout_width="271dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn"
+        app:srcCompat="@drawable/rectangle" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="231dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center_vertical"
+        android:hint="  Email Id"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rect"
+        app:layout_constraintStart_toStartOf="@+id/rect"
+        app:layout_constraintTop_toTopOf="@+id/rect" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="231dp"
+        android:layout_height="39dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="76dp"
+        android:gravity="center_vertical"
+        android:hint=" Password"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rect"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/rect"
+        app:layout_constraintTop_toTopOf="@id/Email" />
+
+    <ImageView
+        android:id="@+id/password_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/password"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/mail_line" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:onClick="login"
+        android:background="@drawable/login_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/rect"
+        app:layout_constraintEnd_toEndOf="@+id/rect"
+        app:layout_constraintStart_toStartOf="@+id/rect"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
