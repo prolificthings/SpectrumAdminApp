@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/spectrum_logo"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/spectrum_txt"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        app:srcCompat="@drawable/spectrum_txt"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="52dp"
+        app:srcCompat="@drawable/login_txt" />
+
+
+
+    <ImageView
+        android:id="@+id/emailRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/passwordRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailRect"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
+        android:layout_alignLeft="@+id/emailRect"
+        android:layout_marginLeft="21dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <EditText
+        android:id="@+id/email_txt"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_alignLeft="@id/userImg"
+        android:layout_marginTop="213dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#3c4de2"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="285dp"
+        android:layout_alignLeft="@id/lockImg"
+        android:fontFamily="@font/montserrat"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#3c4de2"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/lockImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordRect"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="295dp"
+        app:srcCompat="@drawable/password_icon" />
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/signin_rect"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+         />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/login_pic" />
+
+
+</RelativeLayout>
